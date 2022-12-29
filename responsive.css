@@ -1,0 +1,194 @@
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+    #header {
+        padding: 20px 50px;
+    }
+    #header .logo {
+        font-weight: 550;
+        font-size: 1.4em;
+    }
+    #header ul li {
+        margin-left: 10px;
+    }
+    #header ul li a {
+        padding: 2px 7px;
+        font-size: 11px;
+        border-radius: 14px;
+    }
+    section {
+        height: 70vh;
+    }
+    section::before {
+        height: 70px;
+    }
+    section #book3 {
+        width: 23%;
+        height: 37%;
+    }
+    section #text {
+        font-size: 6vw;
+        text-shadow: 6px 3px 3px #ffffff;
+    }
+    section #text span {
+        font-size: 0.18em;
+        letter-spacing: 1.4px;
+        font-weight: 450;
+    }
+    section #button {
+        padding: 6px 20px;
+        font-size: 1em;
+        font-weight: 450;
+        letter-spacing: 1.5px;
+        border-radius: 30px;
+    }
+    .sec {
+        padding: 70px;
+    }
+    .sec::before {
+        height: 70px;
+    }
+    .sec h2 {
+        font-size: 2em;
+        margin-bottom: 30px; 
+        margin-top: 70px;
+    }
+    .card-body {
+        padding: 1rem;
+    }
+    .card-body .btn {
+        padding: 6px 18px;
+        font-size: 0.8em;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-top: 120px;
+    }
+    .card-body .btn:hover {
+        border: 1px solid;
+        font-weight: 600;
+    }
+    footer {
+        width: 100%;
+        min-height: 70px;
+        padding: 10px 50px;
+    }
+    footer .social_icon {
+        margin: 7px 0;
+    }
+    footer .social_icon li a {
+        font-size: 1.5em;
+        margin: 0 15px;
+    }
+    footer p {
+        margin-top: 6px;
+        margin-bottom: 7px;
+        font-size: 0.8em;
+        letter-spacing: 2px;
+        line-height: 18px;
+    }
+    footer span {
+        font-size: 0.3em;
+        letter-spacing: 2px;
+    }
+    footer .wave {
+        top: -60px;
+        height: 70px;
+        background-size: 1000px 70px;
+    }
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 740px) {
+    #header .logo {
+        font-weight: 600;
+        font-size: 1.4em;
+    }
+    #header .bar{
+        display: block;
+        cursor: pointer;
+        float: right;
+        margin-right: 5%;
+        transition: all 0.5s;
+        font-size: 2em;
+    }
+    #header ul {
+        display: none;
+    }
+    section {
+        height: 100vh;
+    }
+    section::before {
+        height: 70px;
+    }
+    section #book2 {
+        top: 50%;
+        width: 40%;
+        height: 40%;
+        margin-left: 62%;
+    }
+    section #book3 {
+        top: 57%;
+        width: 30%;
+        height: 27%;
+        margin-left: 0;
+    }
+    section #text {
+        font-size: 11vw;
+        text-shadow: 6px 3px 3px #ffffff;
+        line-height: 60px;
+        letter-spacing: 2px;
+    }
+    section #text span {
+        font-size: 0.25em;
+        letter-spacing: 1.4px;
+        font-weight: 500;
+    }
+    section #button {
+        padding: 9px 30px;
+        font-size: 1.2em;
+        font-weight: 550;
+        letter-spacing: 1.5px;
+        border-radius: 30px;
+    }
+    .sec {
+        padding: 40px;
+    }
+    .sec::before {
+        height: 40px;
+    }
+    .sec h2 {
+        font-size: 1.4em;
+        margin-bottom: 20px; 
+        margin-top: 40px;
+    }
+    .card-body {
+        padding: 0.7rem;
+    }
+    .card-body .btn {
+        padding: 9px 18px;
+        font-size: 0.8em;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-top: 120px;
+    }
+    footer {
+        width: 100%;
+        min-height: 40px;
+        padding: 8px 40px;
+    }
+    footer .social_icon li a {
+        font-size: 1.2em;
+    }
+    footer p {
+        margin-top: 6px;
+        margin-bottom: 7px;
+        font-size: 0.7em;
+    }
+    footer span {
+        font-size: 0.3em;
+        letter-spacing: 2px;
+    }
+    footer .wave {
+        top: -50px;
+        height: 60px;
+    }
+}

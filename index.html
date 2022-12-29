@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+    <title>Perpustakaan Online</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <!-- Demo styles -->
+    <style>
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 320px;
+            height: 240px;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            border-radius: 0.25rem;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            border-top-left-radius: calc(0.25rem - 1px);
+            border-top-right-radius: calc(0.25rem - 1px);
+            vertical-align: middle;
+            border-style: none;
+            overflow-clip-margin: content-box;
+            overflow: clip;
+        }
+        @media all and (max-width: 1000px) {
+            .swiper-slide {
+                width: 240px;
+                height: 180px;
+            }
+        }
+        @media all and (max-width: 740px) {
+            .swiper-slide {
+                width: 240px;
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <a href="#header" class="logo">Perpustakaan Online</a>
+        <a href="#" class="bar">
+            <ion-icon name="menu-outline"></ion-icon>
+        </a>
+        <ul>
+            <li>
+                <a href="#header" class="active">Home</a>
+            </li>
+            <li>
+                <a href="#Bindo">Bahasa Indonesia</a>
+            </li>
+            <li>
+                <a href="#Binggris">Bahasa Inggris</a>
+            </li>
+            <li>
+                <a href="#Matematika">Matematika</a>
+            </li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="text">
+            <br>Media Pengembangan Literasi dan Numerasi<br>
+            <span>untuk Siswa Sekolah Dasar</span>
+        </h2>
+        <img src="book2.png" id="book2">
+        <img src="book3.png" id="book3">
+        <img src="book4.png" id="book4">
+        <a href="#" id="button">
+            Explore
+        </a>
+    </section>
+
+    <div class="sec">
+        <h2 id="Binggris"><br>Bahasa Inggris</h2>
+        <div class="swiper mySwiper">
+            <img src="bg1.gif" id="background1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="1StoryPlace.png" />
+                    <div class="card-body">
+                        <input type="button" class="btn"  value="Story Place" onclick="validasi1()">
+                        <script type="text/javascript">
+                        function validasi1(){
+                            window.open("https://www.storyplace.org/front");
+                        }
+                        </script> 
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="2DigitalLibrary.png" />
+                    <div class="card-body">
+                        <input type="button" class="btn"  value="Digital Library" onclick="validasi2()">
+                        <script type="text/javascript">
+                        function validasi2(){
+                            window.open("https://digitallibrary.io/");
+                        }
+                        </script> 
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="3LiteracyCloud.png" />
+                    <div class="card-body">
+                        <input type="button" class="btn"  value="Literacy Cloud" onclick="validasi3()">
+                        <script type="text/javascript">
+                        function validasi3(){
+                            window.open("https://literacycloud.org/");
+                        }
+                        </script> 
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="4VirtualMiddleSchoolLibrary.png" />
+                    <div class="card-body">
+                        <input type="button" class="btn"  value="Sldi Rectory" onclick="validasi4()">
+                        <script type="text/javascript">
+                        function validasi4(){
+                            window.open("https://www.sldirectory.com/virtual.html");
+                        }
+                        </script> 
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <h2 id="Matematika"><br>Matematika</h2>
+        <div class="swiper mySwiper">
+            <img src="bg2.gif" id="background2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="1PatrickJMT.png" />
+                    <div class="card-body">
+                        <input type="button" class="btn"  value="Patrick JMT" onclick="validasi5()">
+                        <script type="text/javascript">
+                        function validasi5(){
+                            window.open("http://patrickjmt.com/");
+                        }
+                        </script> 
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="2MathPlanet.png" />
+                    <div class="card-body">
+                        <input type="button" class="btn"  value="Math Planet" onclick="validasi6()">
+                        <script type="text/javascript">
+                        function validasi6(){
+                            window.open("https://www.mathplanet.com/");
+                        }
+                        </script> 
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="3MathWarehouse.png" />
+                    <div class="card-body">
+                        <input type="button" class="btn"  value="Math Warehouse" onclick="validasi7()">
+                        <script type="text/javascript">
+                        function validasi7(){
+                            window.open("https://www.mathwarehouse.com/");
+                        }
+                        </script> 
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="4HoodaMath.png" />
+                    <div class="card-body">
+                        <input type="button" class="btn"  value="Hooda Math" onclick="validasi8()">
+                        <script type="text/javascript">
+                        function validasi8(){
+                            window.open("https://www.hoodamath.com/");
+                        }
+                        </script> 
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="5CoolMathGames.png" />
+                    <div class="card-body">
+                        <input type="button" class="btn"  value="Cool Math" onclick="validasi9()">
+                        <script type="text/javascript">
+                        function validasi9(){
+                            window.open("https://www.coolmathgames.com/");
+                        }
+                        </script> 
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="6BBC.png" />
+                    <div class="card-body">
+                        <input type="button" class="btn"  value="BBC" onclick="validasi10()">
+                        <script type="text/javascript">
+                        function validasi10(){
+                            window.open("https://www.bbc.co.uk/bitesize");
+                        }
+                        </script> 
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="7Arcademics.png" />
+                    <div class="card-body">
+                        <input type="button" class="btn"  value="Arcademics" onclick="validasi11()">
+                        <script type="text/javascript">
+                        function validasi11(){
+                            window.open("https://www.arcademics.com/");
+                        }
+                        </script> 
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <h2 id="Bindo"><br>Bahasa Indonesia</h2>
+        <div class="swiper mySwiper">
+            <img src="bg3.gif" id="background3">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="1DigitalLibraryIndonesia.png" />
+                    <div class="card-body">
+                        <input type="button" class="btn"  value="Digital Library" onclick="validasi12()">
+                        <script type="text/javascript">
+                        function validasi12(){
+                            window.open("https://digitallibrary.io/id");
+                        }
+                        </script> 
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="2Letsreadasia.png" />
+                    <div class="card-body">
+                        <input type="button" class="btn"  value="Letsreadasia" onclick="validasi13()">
+                        <script type="text/javascript">
+                        function validasi13(){
+                            window.open("https://www.letsreadasia.org/");
+                        }
+                        </script> 
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="3TVEdukasi.png" />
+                    <div class="card-body">
+                        <input type="button" class="btn"  value="TV Edukasi" onclick="validasi14()">
+                        <script type="text/javascript">
+                        function validasi14(){
+                            window.open("http://tve.kemdikbud.go.id/");
+                        }
+                        </script> 
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <p><br></p>
+    </div>
+    <footer>
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+        <ul class="social_icon">
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="mail-outline"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+        <p>Copyright (C) Beasiswa Bakti BCA Tahun Ajaran 2022/2023<br>Kelompok 4 Universitas Airlangga</p>
+        <span>Oleh Tania Fatma Wati</span>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+    <script>
+        let text = document.getElementById('text');
+        let book2 = document.getElementById('book2');
+        let book3 = document.getElementById('book3');
+        let button = document.getElementById('button');
+        let book4 = document.getElementById('book4');
+        let header = document.getElementById('header');
+    
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top = 36 + value * -0.5 + '%';
+            book2.style.bottom = value * -1.5 + 'px';
+            book2.style.left = value * 2 + 'px';
+            book3.style.bottom = value * -1.5 + 'px';
+            book3.style.left = value * -2 + 'px';
+            button.style.marginTop = value * 1.5 + 'px';
+            book4.style.top = value * 0.25 + 'px';
+        })
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
