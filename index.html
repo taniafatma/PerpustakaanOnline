@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Demo styles -->
     <style>
@@ -40,15 +41,34 @@
             overflow: clip;
         }
         @media all and (max-width: 1000px) {
+            .swiper {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
             .swiper-slide {
                 width: 240px;
                 height: 180px;
             }
         }
         @media all and (max-width: 740px) {
+            .swiper {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
             .swiper-slide {
                 width: 240px;
                 height: 280px;
+            }
+        }
+        @media all and (max-width: 420px) {
+            .swiper {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
+            .swiper-slide {
+                width: 150px;
+                height: 250px;
             }
         }
     </style>
@@ -56,22 +76,24 @@
 
 <body>
     <header id="header">
-        <a href="#header" class="logo">Perpustakaan Online</a>
-        <a href="#" class="bar">
-            <ion-icon name="menu-outline"></ion-icon>
-        </a>
-        <ul>
+        <a href="#" class="logo">Perpustakaan Online</a>
+        <input type="checkbox" id="nav-checkbox">
+        <label for="nav-checkbox" class="nav-toggle">
+            <ion-icon name="menu-sharp" class="open"></ion-icon>
+            <ion-icon name="close-sharp" class="close"></ion-icon>
+        </label>
+        <ul class="nav-menu">
             <li>
-                <a href="#header" class="active">Home</a>
-            </li>
-            <li>
-                <a href="#Bindo">Bahasa Indonesia</a>
+                <a href="#" class="active">Home</a>
             </li>
             <li>
                 <a href="#Binggris">Bahasa Inggris</a>
             </li>
             <li>
                 <a href="#Matematika">Matematika</a>
+            </li>
+            <li>
+                <a href="#Bindo">Bahasa Indonesia</a>
             </li>
         </ul>
     </header>
@@ -83,13 +105,13 @@
         <img src="book2.png" id="book2">
         <img src="book3.png" id="book3">
         <img src="book4.png" id="book4">
-        <a href="#" id="button">
+        <a href="#Binggris" id="button">
             Explore
         </a>
     </section>
 
     <div class="sec">
-        <h2 id="Binggris"><br>Bahasa Inggris</h2>
+        <h2 id="Binggris">Bahasa Inggris</h2>
         <div class="swiper mySwiper">
             <img src="bg1.gif" id="background1">
             <div class="swiper-wrapper">
@@ -140,7 +162,7 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
-        <h2 id="Matematika"><br>Matematika</h2>
+        <h2 id="Matematika">Matematika</h2>
         <div class="swiper mySwiper">
             <img src="bg2.gif" id="background2">
             <div class="swiper-wrapper">
@@ -224,7 +246,7 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
-        <h2 id="Bindo"><br>Bahasa Indonesia</h2>
+        <h2 id="Bindo">Bahasa Indonesia</h2>
         <div class="swiper mySwiper">
             <img src="bg3.gif" id="background3">
             <div class="swiper-wrapper">
@@ -271,12 +293,6 @@
         <div class="wave" id="wave2"></div>
         <div class="wave" id="wave3"></div>
         <div class="wave" id="wave4"></div>
-        <ul class="social_icon">
-            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="mail-outline"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-        </ul>
         <p>Copyright (C) Beasiswa Bakti BCA Tahun Ajaran 2022/2023<br>Kelompok 4 Universitas Airlangga</p>
         <span>Oleh Tania Fatma Wati</span>
     </footer>
@@ -324,6 +340,18 @@
             button.style.marginTop = value * 1.5 + 'px';
             book4.style.top = value * 0.25 + 'px';
         })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(window).bind('scroll', function(){
+                var gap = 50;
+                if ($(window).scrollTop() > gap ) {
+                    $('header').addClass('active');
+                } else {
+                    $('header').removeClass('active');
+                }
+            });
+        });
     </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
